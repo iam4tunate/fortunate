@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: $bp-lg) {
+        font-size: 58%;
+    }
+
+    @media screen and (max-width: $bp-md) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: rubik-regular;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+// .container {
+//     padding: $section-spacing;
+// }
+
+.container {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 100vh repeat(5, min-content);
+    grid-template-columns: [sidebar-start] 25% [sidebar-end full-start] 45% [center-line] 30% [full-end];
+
+    @media screen and (max-width: $bp-xlg) {
+        grid-template-columns: [sidebar-start] 8% [sidebar-end full-start] 55% [center-line] 1fr [full-end];
+    }
+
+    @media screen and (max-width: $bp-md) {
+        grid-template-rows: [sidebar-start] 10% [sidebar-end head-start] min-content [head-end] repeat(4, min-content);
+        grid-template-columns: [full-start] 65% [center-line] 1fr [full-end];
+    }
+
+    @media screen and (max-width: $bp-sm) {
+        grid-template-columns: [full-start] 1fr [full-end];
+    }
+}
+
+// .row{
+//     display: grid;
+//     grid-template-columns: 25% 45% 30%;
+// }
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+.padding {
+    padding: 7rem 3rem;
+}
+
+@media screen and (max-width: $bp-md) {
+    .padding {
+        padding: 7rem 5rem;
+    }
+}
+
+@media screen and (max-width: $bp-sm) {
+    .padding {
+        padding: 8rem 2rem;
+    }
+}

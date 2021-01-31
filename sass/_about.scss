@@ -1,0 +1,56 @@
+.about {
+    background-color: $dark-blue;
+    grid-column: full-start / full-end;
+    grid-row: 2;
+
+    &__text {
+        text-align: left;
+
+        &-bg {
+            font-size: 4rem;
+            font-family: rubik-medium;
+            color: $white;
+            width: 80%;
+
+            @media screen and (max-width: $bp-lg) {
+                font-size: 2.5rem;
+            }
+
+            >span {
+                color: $coral;
+            }
+        }
+
+        &-sm {
+            padding-top: 4rem;
+            font-size: 1.6rem;
+            line-height: 2;
+            color: $white;
+            width: 70%;
+
+            >a {
+                cursor: pointer;
+                color: $coral;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-md) {
+    .about {
+        grid-row: 2;
+
+        &__text {
+            &-bg {
+                width: 100%;
+            }
+
+            &-sm {
+                width: 100%;
+            }
+        }
+    }
+}

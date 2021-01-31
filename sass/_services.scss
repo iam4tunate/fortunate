@@ -1,0 +1,101 @@
+.services {
+    background-color: $dark-blue;
+    grid-column: full-start / full-end;
+    grid-row: 3;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 75vh;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        border: 1px solid $coral;
+        cursor: pointer;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+        background-color: $blue;
+    }
+
+    &-icon {
+        fill: $white;
+        height: 8rem;
+        width: 8rem;
+
+        @media screen and (max-width: $bp-sm) {
+            height: 6.6rem;
+            width: 6.6rem;
+        }
+    }
+
+    &-title {
+        padding: 3.5rem 0;
+        font-size: 2.9rem;
+        color: $coral;
+
+        @media screen and (max-width: $bp-lg) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &-para {
+        font-size: 1.6rem;
+        color: $white;
+        line-height: 1.7;
+    }
+}
+
+@media screen and (max-width: $bp-xlg) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: $bp-md) {
+    .services {
+        grid-row: 3;
+
+        .services-grid {
+            gap: 6rem 3rem;
+        }
+
+        .service {
+            border: 1px solid $coral;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-sm) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        padding: 0;
+    }
+}

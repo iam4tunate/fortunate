@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fortunate | Frontend Developer</title>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./dist/styles.css">
+    </head>
+
+    <body class="container">
+
+        <div class="sidebar__menu flex fd-c ai-c">
+            <div id="menuToggleClose" class="sidebar__menu-hamburger">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="sidebar__menu-list flex fd-c">
+                <a href="#home" class="sidebar__menu-link">Home</a>
+                <a href="#about" class="sidebar__menu-link">About</a>
+                <a href="#services" class="sidebar__menu-link">Services</a>
+                <a href="#portfolios" class="sidebar__menu-link">Portfolio</a>
+                <a href="#contact" class="sidebar__menu-link">Contact</a>
+            </div>
+        </div>
+        <aside class="sidebar flex fd-c ai-c jc-sb">
+            <div class="sidebar-hamburger" id="menuToggleOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidebar-logo">Fortunate O.</div>
+            <div class="sidebar__info">
+                <div class="sidebar__info-box">
+                    <div class="sidebar__info-title">Name</div>
+                    <div class="sidebar__info-text">Fortunate Ogodu</div>
+                </div>
+                <div class="sidebar__info-box">
+                    <div class="sidebar__info-title">Role</div>
+                    <div class="sidebar__info-text">Web Developer</div>
+                </div>
+                <div class="sidebar__info-box">
+                    <div class="sidebar__info-title">Email</div>
+                    <div class="sidebar__info-text">Fortunateogodu@yahoo.com</div>
+                </div>
+                <div class="sidebar__info-box">
+                    <div class="sidebar__info-title">Telephone</div>
+                    <div class="sidebar__info-text">(+234) 811 410 9360</div>
+                </div>
+            </div>
+            <div class="sidebar-copyright">
+                2021 Copyright | Made with ❤
+            </div>
+        </aside>
+        <div id="home" class="header__welcome flex fd-c ai-c jc-sa">
+            <div class="header__welcome-bg tt-u">Looking for a web developer?</div>
+            <div class="header__welcome-para tt-u">Have got you covered. I create <span>beautiful</span> and
+                <span>functional</span> web applications with
+                html/css, javascript, PHP & Firebase.</div>
+            <div class="header__link-grid">
+                <div class="header__link">
+                    <div class="header__link-title">Connect</div>
+                    <a href="#">Email</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="header__link">
+                    <div class="header__link-title">Social</div>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Github</a>
+                </div>
+                <div class="footer__links"></div>
+            </div>
+        </div>
+        <div class="header-hero">
+            <div class="header-signature">
+                <img src="./assets/images/signature.png" alt="">
+            </div>
+        </div>
+
+        <section id="about" class="about padding">
+            <div class="section-title">About.</div>
+            <div class="about__text">
+                <div class="about__text-bg">
+                    Hi, I’m Fortunate Ogodu.
+                    A Web Developer, based in Lagos, Nigeria and i love what i do.</div>
+                <div class="about__text-sm">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga saepe dolorum minus facere quod
+                    ratione, maiores sequi perferendis laboriosam quam quibusdam ab pariatur aspernatur, et libero!
+                    Soluta, quam officia quo voluptatem est velit dolor nesciunt esse, eaque, quasi placeat a!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br><br>Impedit dolorum numquam enim, ipsa
+                    accusantium quae veritatis dicta asperiores. Explicabo placeat culpa illo eos impedit nesciunt,
+                    laboriosam amet numquam aut, dolor quae fuga officiis delectus? Atque ipsam quis odit quas pariatur?
+                    I’ve worked on project like:
+                    <a href="#">influencers</a>,
+                    <a href="#">covid-19</a>,
+                    <a href="#">cardoc</a>,
+                    <a href="#">pexel studio</a> ...
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services padding">
+            <div class="section-title">Services.</div>
+            <div class="services-grid">
+                <div class="service">
+                    <svg class="service-icon">
+                        <use xlink:href="./assets/images/layers.svg#layers"></use>
+                    </svg>
+                    <div class="service-title">UI/UX</div>
+                    <p class="service-para">UI/UX involves planning and iterating a site's structure and layout. I
+                        design the visual layer to create a beautiful
+                        user experience.</p>
+                </div>
+                <div class="service">
+                    <figure class="service-icon">
+                        <img src="./assets/images/web_programming.svg" alt="">
+                    </figure>
+                    <div class="service-title">Web Development</div>
+                    <p class="service-para">Web Development is building out the visual components of a website.
+                        Using HTML, CSS , Javascript and PHP, I build fast, interactive websites.</p>
+                </div>
+                <div class="service">
+                    <figure class="service-icon">
+                        <img src="./assets/images/idea.svg" alt="">
+                    </figure>
+                    <div class="service-title">Marketing</div>
+                    <p class="service-para">Marketing refers to promoting the buying or
+                        selling of a products, services. I help in getting your products to the right
+                        customers/audience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolios" class="portfolios padding">
+            <div class="section-title">Portfolio.</div>
+            <div class="portfolio-grid">
+                <div class="portfolio">
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio1.png" alt="">
+                    </figure>
+                    <div class="portfolio-content portfolio-order1">
+                        <div class="portfolio-title">Influencer</div>
+                        <div class="portfolio-para">Influencer are experts in promoting your products and targeting the
+                            right audience</div>
+                        <a href="https://Influencerr.netlify.app" target="_blank" class="portfolio-btn">Live Preview</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-content tx-r portfolio-order1">
+                        <div class="portfolio-title">Covid-19</div>
+                        <div class="portfolio-para">A website creating with the aim of raising awareness about the
+                            present pandemic we ar having.</div>
+                        <a href="https://kovidd-19.netlify.app" target="_blank" class="portfolio-btn">Live Preview</a>
+                    </div>
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio2.png" alt="">
+                    </figure>
+                </div>
+                <div class="portfolio">
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio3.png" alt="">
+                    </figure>
+                    <div class="portfolio-content portfolio-order1">
+                        <div class="portfolio-title">Tasued login clone</div>
+                        <div class="portfolio-para">The cloned version of Tai solarin univesity of education portal
+                            login form</div>
+                        <a href="https://mytasuedlogin.netlify.app" target="_blank" class="portfolio-btn">Live
+                            Preview</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-content tx-r portfolio-order1">
+                        <div class="portfolio-title">Cardoc</div>
+                        <div class="portfolio-para">A mechanical engineering workshop website. Your engines are 100%
+                            safe with them.</div>
+                        <a href="https://cardoc.netlify.app" target="_blank" class="portfolio-btn">Live Preview</a>
+                    </div>
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio4.png" alt="">
+                    </figure>
+                </div>
+                <div class="portfolio">
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio5.png" alt="">
+                    </figure>
+                    <div class="portfolio-content portfolio-order1">
+                        <div class="portfolio-title">Web Dev Portfolio</div>
+                        <div class="portfolio-para">Nice portfolio website for web developers.</div>
+                        <a href="https://web-dev-port.netlify.app" target="_blank" class="portfolio-btn">Live
+                            Preview</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-content tx-r portfolio-order1">
+                        <div class="portfolio-title">Pexel Studio</div>
+                        <div class="portfolio-para">Pexel studio is a web agency, they specialize in creating web
+                            stuffs.</div>
+                        <a href="https://pexel-studio.netlify.app" target="_blank" class="portfolio-btn">Live
+                            Preview</a>
+                    </div>
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio6.png" alt="">
+                    </figure>
+                </div>
+                <div class="portfolio">
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio7.png" alt="">
+                    </figure>
+                    <div class="portfolio-content portfolio-order1">
+                        <div class="portfolio-title">Huddle</div>
+                        <div class="portfolio-para">Huddle is a website for community builders.</div>
+                        <a href="https://huddle-project.netlify.app" target="_blank" class="portfolio-btn">Live
+                            Preview</a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-content portfolio-order1 tx-r">
+                        <div class="portfolio-title">YouTube Desktop Version Clone</div>
+                        <div class="portfolio-para">Cloned version of youtube. Kindly open this link in a desktop screen.
+                        </div>
+                        <a href="https://youtube-web-clone.netlify.app/" target="_blank" class="portfolio-btn">Live
+                            Preview</a>
+                    </div>
+                    <figure class="portfolio-img portfolio-order2">
+                        <img src="./assets/images/portfolio8.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact padding">
+            <div class="section-title">Get in Touch.</div>
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        Interested in working together?
+                        Feel free to contact me for any project or collaboration. i work remotely too.
+                    </div>
+                    <div class="contact-icons flex ai-c">
+                        <a href="#" class="contact-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="contact-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="#" class="contact-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form flex fd-c ai-c" action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea rows="10" placeholder="Message"></textarea>
+                    <a href="#" class="contact-submit tt-u">Send</a>
+                </form>
+            </div>
+        </section>
+
+        <script src="./dist/script.js"></script>
+    </body>
+
+</html>

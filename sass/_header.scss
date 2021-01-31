@@ -1,0 +1,141 @@
+.header {
+    &__welcome {
+        grid-column: full-start / center-line;
+        grid-row: 1;
+        background-color: $white;
+        padding: 5rem 5rem 0;
+        position: relative;
+
+        @media screen and (max-width: $bp-lg) {
+            padding: 5rem 3rem 0;
+        }
+
+        &-bg {
+            color: $blue;
+            font-size: 3.5rem;
+
+            @media screen and (max-width: $bp-md) {
+                font-size: 3rem;
+                font-family: rubik-medium;
+            }
+
+            @media screen and (max-width: $bp-sm) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &-para {
+            line-height: 1.9;
+            color: $blue;
+            font-size: 2rem;
+
+            @media screen and (max-width: $bp-lg) {
+                font-size: 1.9rem;
+            }
+
+            >span {
+                color: $coral;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 15rem;
+        }
+
+        &-title {
+            font-size: 1.8rem;
+            font-family: rubik-bold;
+            color: $coral;
+            position: relative;
+            z-index: 1;
+            width: fit-content;
+            text-transform: uppercase;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                content: "";
+                height: .5rem;
+                width: 100%;
+                background-color: $blue;
+                transform: translateY(-.5rem);
+                z-index: -1;
+            }
+        }
+
+        &>a {
+            font-size: 1.5rem;
+            color: $blue;
+            padding: .5rem 0;
+            font-family: rubik-medium;
+        }
+    }
+
+    &-hero {
+        grid-column: center-line / full-end;
+        grid-row: 1;
+        position: relative;
+        background-image: linear-gradient(rgba($blue, .5), rgba($blue, .5)), url(../assets/images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &-signature {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: $bp-md) {
+    .header {
+        &-hero {
+            grid-row: 1;
+            grid-column: center-line / full-end;
+        }
+
+        &__welcome {
+            padding: 7rem 5rem 3rem;
+            grid-column: full-start / center-line;
+            grid-row: 1;
+            position: static;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-sm) {
+    .header {
+        &-hero {
+            display: none;
+        }
+
+        &-signature {
+            display: none;
+        }
+
+        &__welcome {
+            height: auto;
+            padding: 7rem 2rem 3rem;
+            grid-column: full-start / center-line;
+            grid-row: 1;
+        }
+
+        &__link-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            grid-gap: 0 12rem;
+        }
+    }
+}
